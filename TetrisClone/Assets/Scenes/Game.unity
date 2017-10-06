@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_height: 30
   m_width: 10
-  m_emptySprite: {fileID: 4000012881618852, guid: 54991df5421274f46b336249f2a4f8e2,
+  m_emptySprite: {fileID: 4000013655759496, guid: 721443316f53d434c92393cd346a1f35,
     type: 2}
   m_header: 8
 --- !u!4 &1087153037
@@ -2937,6 +2937,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319d38d98bcf4b649a6841a338e400b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_allShapes:
+  - {fileID: 114000011129943674, guid: c9246d525f158764ca31717a27b4d4e8, type: 2}
+  - {fileID: 114000012477531950, guid: 707ea0e354e7a684785cb9cf79ab5433, type: 2}
+  - {fileID: 114000010912796144, guid: 9ee8dbe38d232f849b15efc59a48977f, type: 2}
+  - {fileID: 114000010489855494, guid: b49411091730f354ba9a2c50c51dc292, type: 2}
+  - {fileID: 114000011254121748, guid: d15538b961d20014ca6221cb5fa97d7c, type: 2}
+  - {fileID: 114000013364039724, guid: d55c8e1a4cf42db49b8e4753a374cf27, type: 2}
+  - {fileID: 114000012908969002, guid: 2e57bd2d5a62aaf41951336dc29b3ee6, type: 2}
 --- !u!4 &1972448267
 Transform:
   m_ObjectHideFlags: 0
@@ -2944,7 +2952,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1972448265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4, y: 25, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
