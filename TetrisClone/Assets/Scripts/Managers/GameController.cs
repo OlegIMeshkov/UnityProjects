@@ -92,14 +92,13 @@ public class GameController : MonoBehaviour {
 
 		m_activeShape.MoveUp ();
 		m_gameBoard.StoreShapeInGrid (m_activeShape);
+
+		PlaySound (m_soundManager.m_dropSound, 0.75f);
 		m_activeShape = m_spawner.SpawnShape ();
 
 		m_gameBoard.ClearAllRows ();
 
-		if (m_soundManager.m_fxEnabled && m_soundManager.m_dropSound) 
-		{
-			AudioSource.PlayClipAtPoint (m_soundManager.m_dropSound, Camera.main.transform.position, m_soundManager.m_fxVolume);
-		}
+
 	}
 
 	void GameOver ()
@@ -107,8 +106,17 @@ public class GameController : MonoBehaviour {
 		m_activeShape.MoveUp ();
 		m_gameOver = true;
 		Debug.LogWarning (m_activeShape.name + " is over the limit");
+
+		PlaySound (m_soundManager.m_gameOverSound, 5f);
 		if (m_gameOverPanel) {
 			m_gameOverPanel.SetActive (true);
+		}
+	}
+
+	void PlaySound (AudioClip clip, float volMultiplier)
+	{
+		if (m_soundManager.m_fxEnabled && clip) {
+			AudioSource.PlayClipAtPoint (clip, Camera.main.transform.position, Mathf.Clamp(m_soundManager.m_fxVolume * volMultiplier,0.05f, 1f));
 		}
 	}
 
@@ -120,22 +128,38 @@ public class GameController : MonoBehaviour {
 			m_timeToNextKeyLeftRight = Time.time + m_keyRepeatRateLeftRight;
 			if (!m_gameBoard.IsValidPosition (m_activeShape)) {
 				m_activeShape.MoveLeft ();
+				PlaySound (m_soundManager.m_errorSound, 0.7f); 
+			} else 
+			{
+				PlaySound (m_soundManager.m_moveSound, 0.5f); 
 			}
 		} 
 		else if (Input.GetButton ("MoveLeft") && Time.time > m_timeToNextKeyLeftRight || Input.GetButtonDown ("MoveLeft"))
 		{
 			m_activeShape.MoveLeft ();
 			m_timeToNextKeyLeftRight = Time.time + m_keyRepeatRateLeftRight;
-			if (!m_gameBoard.IsValidPosition (m_activeShape)) {
+			  
+
+			if (!m_gameBoard.IsValidPosition (m_activeShape))
+			{
 				m_activeShape.MoveRight ();
+				PlaySound (m_soundManager.m_errorSound, 0.7f); 
+			}else 
+			{
+				PlaySound (m_soundManager.m_moveSound, 0.5f); 
 			}
 		}
 		else if (Input.GetButtonDown ("Rotate") && Time.time > m_timeToNextKeyRotate) 
 		{
 			m_activeShape.RotateRight ();
 			m_timeToNextKeyRotate = Time.time + m_keyRepeatRateRotate;
+
 			if (!m_gameBoard.IsValidPosition (m_activeShape)) {
 				m_activeShape.RotateLeft ();
+				PlaySound (m_soundManager.m_errorSound, 0.7f); 
+			}else 
+			{
+				PlaySound (m_soundManager.m_moveSound, 0.5f); 
 			}
 		} 
 		else if ((Input.GetButton("MoveDown") && Time.time > m_timeToNextKeyDown) || Time.time > m_timeToDrop) 
@@ -161,5 +185,6 @@ public class GameController : MonoBehaviour {
 		Debug.Log ("Restarted");
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 	}
+
 
 }

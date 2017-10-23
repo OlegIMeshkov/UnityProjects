@@ -16,6 +16,7 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip m_moveSound;
 	public AudioClip m_dropSound;
 	public AudioClip m_gameOverSound;
+	public AudioClip m_errorSound;
 	public AudioClip m_backgroundMusic;
 	public AudioSource m_musicSource;
 
