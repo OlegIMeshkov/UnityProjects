@@ -10,18 +10,14 @@ public class GameController : MonoBehaviour {
 
 	Shape m_activeShape;
 
+	SoundManager m_soundManager;
+
 	float m_dropIntreval = 0.9f;
 	float m_timeToDrop;
-	/*
-	float m_timeToNextKey;
-	[Range(0.02f,1f)]
-	public float m_keyRepeatRate = 0.25f;
-	*/
 
 	float m_timeToNextKeyLeftRight;
 	[Range(0.02f,1f)]
 	public float m_keyRepeatRateLeftRight = 0.25f;
-
 
 	float m_timeToNextKeyDown;
 	[Range(0.02f,1f)]
@@ -47,12 +43,16 @@ public class GameController : MonoBehaviour {
 
 		m_gameBoard = GameObject.FindObjectOfType<Board> ();
 		m_spawner = GameObject.FindObjectOfType<Spawner> ();
+		m_soundManager = GameObject.FindObjectOfType<SoundManager> ();
 
 		if (!m_gameBoard) 
 		{
 			Debug.LogWarning("Warining! There is no game board defined!");
 		}
-
+		if (!m_soundManager) 
+		{
+			Debug.LogWarning("Warining! There is no Sound Manager defined!");
+		}
 
 		if (!m_spawner) 
 		{
@@ -70,7 +70,18 @@ public class GameController : MonoBehaviour {
 			m_gameOverPanel.SetActive (false);
 		}
 
-	
+	}
+
+	void Update () 
+	{
+		if (!m_gameBoard || !m_spawner || !m_activeShape || m_gameOver ||!m_soundManager) 
+		{
+			return;
+		}
+
+		PlayerInput ();
+
+
 	}
 
 	void LandShape ()
@@ -84,6 +95,11 @@ public class GameController : MonoBehaviour {
 		m_activeShape = m_spawner.SpawnShape ();
 
 		m_gameBoard.ClearAllRows ();
+
+		if (m_soundManager.m_fxEnabled && m_soundManager.m_dropSound) 
+		{
+			AudioSource.PlayClipAtPoint (m_soundManager.m_dropSound, Camera.main.transform.position, m_soundManager.m_fxVolume);
+		}
 	}
 
 	void GameOver ()
@@ -116,10 +132,10 @@ public class GameController : MonoBehaviour {
 		}
 		else if (Input.GetButtonDown ("Rotate") && Time.time > m_timeToNextKeyRotate) 
 		{
-				m_activeShape.RotateRight ();
+			m_activeShape.RotateRight ();
 			m_timeToNextKeyRotate = Time.time + m_keyRepeatRateRotate;
 			if (!m_gameBoard.IsValidPosition (m_activeShape)) {
-					m_activeShape.RotateLeft ();
+				m_activeShape.RotateLeft ();
 			}
 		} 
 		else if ((Input.GetButton("MoveDown") && Time.time > m_timeToNextKeyDown) || Time.time > m_timeToDrop) 
@@ -138,21 +154,6 @@ public class GameController : MonoBehaviour {
 				}
 			}
 		}
-
-	}
-
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		if (!m_gameBoard || !m_spawner || !m_activeShape || m_gameOver) 
-		{
-			return;
-		}
-
-		PlayerInput ();
-
-
 	}
 
 	public void Restart ()

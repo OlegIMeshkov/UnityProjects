@@ -70,6 +70,11 @@ public class SoundManager : MonoBehaviour {
 		UpdateMusic ();
 	}
 
+	public void ToogleFX()
+	{
+		m_fxEnabled = !m_fxEnabled;
+	}
+
 
 	public AudioClip GetRandomClip (AudioClip[] clips)
 	{
