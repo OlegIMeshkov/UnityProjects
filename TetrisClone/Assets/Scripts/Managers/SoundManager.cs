@@ -23,6 +23,11 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip[] m_musicClips;
 	private AudioClip m_randomMusicClip;
 
+	public AudioClip[] m_vocalClips;
+	public AudioClip m_gameOverVocalClip;
+
+
+
 
 
 	// Use this for initialization

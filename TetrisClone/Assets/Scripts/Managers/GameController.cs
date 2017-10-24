@@ -94,11 +94,18 @@ public class GameController : MonoBehaviour {
 		m_gameBoard.StoreShapeInGrid (m_activeShape);
 
 		PlaySound (m_soundManager.m_dropSound, 0.75f);
-		m_activeShape = m_spawner.SpawnShape ();
+		m_activeShape = m_spawner.SpawnShape ();   
 
 		m_gameBoard.ClearAllRows ();
 
-
+		if (m_gameBoard.m_completedRows >0)
+		{
+			if (m_gameBoard.m_completedRows>1) {
+				AudioClip randomVocal = m_soundManager.GetRandomClip (m_soundManager.m_vocalClips);
+				PlaySound (randomVocal, 3f);
+			}
+			PlaySound (m_soundManager.m_clearRowSound, 3f);
+		}
 	}
 
 	void GameOver ()
@@ -108,6 +115,8 @@ public class GameController : MonoBehaviour {
 		Debug.LogWarning (m_activeShape.name + " is over the limit");
 
 		PlaySound (m_soundManager.m_gameOverSound, 5f);
+		PlaySound (m_soundManager.m_gameOverVocalClip, 5f);
+
 		if (m_gameOverPanel) {
 			m_gameOverPanel.SetActive (true);
 		}
