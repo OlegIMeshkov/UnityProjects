@@ -393,7 +393,7 @@ MonoBehaviour:
   centralImage: {fileID: 1591251821}
   images: []
   newImage: {fileID: 0}
-  scrollSpeed: 1000
+  scrollSpeed: 2000
 --- !u!4 &644291725
 Transform:
   m_ObjectHideFlags: 0

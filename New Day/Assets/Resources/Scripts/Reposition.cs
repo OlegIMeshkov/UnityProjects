@@ -3,19 +3,23 @@ using System.Collections;
 
 public class Reposition : MonoBehaviour {
 
+	Vector3 objRectTransformPos;
+
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		objRectTransformPos = this.gameObject.GetComponent<RectTransform> ().position;
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		
+		Debug.Log (objRectTransformPos);
 
-		Debug.Log (this.gameObject.GetComponent<RectTransform> ().position);
-
-		if (this.gameObject.GetComponent<RectTransform> ().position.x <= -540f) 
+		if (objRectTransformPos.x <= -540f) 
 		{
-			this.gameObject.GetComponent<RectTransform> ().position = new Vector3 (1080f, this.gameObject.GetComponent<RectTransform> ().position.y, this.gameObject.GetComponent<RectTransform> ().position.z);
+			objRectTransformPos = new Vector3 (1080f, objRectTransformPos.y, objRectTransformPos.z);
 		}
 	
 	}

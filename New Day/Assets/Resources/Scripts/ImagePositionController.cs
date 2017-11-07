@@ -68,7 +68,8 @@ public class ImagePositionController : MonoBehaviour {
 	{
 		for (int i = 0; i < images.Length; i++) 
 		{
-			images [i].GetComponent<RectTransform> ().position = new Vector3 (Screen.width * (i - 0.5f), images [i].GetComponent<RectTransform> ().position.y, images [i].GetComponent<RectTransform> ().position.z);
+			Vector3 currentImagePos = images [i].GetComponent<RectTransform> ().position;
+			currentImagePos = new Vector3 (Screen.width * (i - 0.5f), currentImagePos.y, currentImagePos.z);
 		}
 
 		Debug.Log (images [1].GetComponent<RectTransform> ().position);
