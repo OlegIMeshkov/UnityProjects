@@ -26,7 +26,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip[] m_vocalClips;
 	public AudioClip m_gameOverVocalClip;
 
-
+	public IconToggle m_musicIconToggle;
+	public IconToggle m_fxIconToggle;
 
 
 
@@ -74,11 +75,18 @@ public class SoundManager : MonoBehaviour {
 	{
 		m_musicEnabled = !m_musicEnabled;
 		UpdateMusic ();
+
+		if (m_musicIconToggle) {
+			m_musicIconToggle.ToggleIcon (m_musicEnabled);
+		}
 	}
 
 	public void ToogleFX()
 	{
 		m_fxEnabled = !m_fxEnabled;
+		if (m_fxIconToggle) {
+			m_fxIconToggle.ToggleIcon (m_fxEnabled);
+		}
 	}
 
 

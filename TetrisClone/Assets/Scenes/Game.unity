@@ -697,6 +697,7 @@ GameObject:
   - 224: {fileID: 474548803}
   - 222: {fileID: 474548805}
   - 114: {fileID: 474548804}
+  - 114: {fileID: 474548806}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -758,6 +759,20 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 474548802}
+--- !u!114 &474548806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 474548802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5d10bb3fc4c374c9f7fffa4ff077e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_iconTrue: {fileID: 21300000, guid: f5472265270312343a671df2601191ea, type: 3}
+  m_iconFalse: {fileID: 21300000, guid: 4675f92cebd41ff43bc59ff6e351647e, type: 3}
+  m_defaultIconState: 1
 --- !u!1 &477963841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,6 +2050,7 @@ MonoBehaviour:
   m_keyRepeatRateDown: 0.02
   m_keyRepeatRateRotate: 0.25
   m_gameOverPanel: {fileID: 421724143}
+  m_rotIconToggle: {fileID: 474548806}
 --- !u!4 &1193040704
 Transform:
   m_ObjectHideFlags: 0
@@ -3562,6 +3578,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 1931911661}
   - 114: {fileID: 1931911662}
+  - 114: {fileID: 1931911663}
   m_Layer: 5
   m_Name: Rotate
   m_TagString: Untagged
@@ -3611,6 +3628,58 @@ MonoBehaviour:
   m_PreferredHeight: 100
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
+--- !u!114 &1931911663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1931911660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 474548804}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1193040703}
+        m_MethodName: ToggleRotDirection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1972448265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3670,6 +3739,7 @@ GameObject:
   - 224: {fileID: 1976280962}
   - 222: {fileID: 1976280964}
   - 114: {fileID: 1976280963}
+  - 114: {fileID: 1976280965}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -3731,6 +3801,20 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1976280961}
+--- !u!114 &1976280965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976280961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5d10bb3fc4c374c9f7fffa4ff077e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_iconTrue: {fileID: 21300000, guid: a311274bcb24cca48a3c00da8e5a6543, type: 3}
+  m_iconFalse: {fileID: 21300000, guid: 4a8ec5e0a7f44964da7c73e3a3d61a4d, type: 3}
+  m_defaultIconState: 1
 --- !u!1 &1980388700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,6 +3963,7 @@ GameObject:
   - 224: {fileID: 2051324263}
   - 222: {fileID: 2051324265}
   - 114: {fileID: 2051324264}
+  - 114: {fileID: 2051324266}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -3940,6 +4025,20 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2051324262}
+--- !u!114 &2051324266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2051324262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5d10bb3fc4c374c9f7fffa4ff077e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_iconTrue: {fileID: 21300000, guid: 986db8651f4a181498b6f2a583e466d8, type: 3}
+  m_iconFalse: {fileID: 21300000, guid: 06a977cfbb6b28b4c9b8f634ae6c0080, type: 3}
+  m_defaultIconState: 1
 --- !u!1 &2065746783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4001,6 +4100,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e753dc3dea92f4b1c81255878103653f, type: 3}
   - {fileID: 8300000, guid: 8b9eee15a25ac4457bc8de1db8deed46, type: 3}
   m_gameOverVocalClip: {fileID: 8300000, guid: dde698f7e18ad439d93644afcb0de99b, type: 3}
+  m_musicIconToggle: {fileID: 2051324266}
+  m_fxIconToggle: {fileID: 1976280965}
 --- !u!1 &2127224266
 GameObject:
   m_ObjectHideFlags: 0
