@@ -34,6 +34,10 @@ public class GameController : MonoBehaviour {
 	public IconToggle m_rotIconToggle;
 	bool m_clockwise = true;
 
+	public bool m_isPaused = false;
+
+	public GameObject m_pausePanel;
+
 
 	// Use this for initialization
 	void Start () 
@@ -72,6 +76,10 @@ public class GameController : MonoBehaviour {
 
 		if (m_gameOverPanel) {
 			m_gameOverPanel.SetActive (false);
+		}
+
+		if (m_pausePanel) {
+			m_pausePanel.SetActive (false);
 		}
 
 	}
@@ -196,11 +204,15 @@ public class GameController : MonoBehaviour {
 		else if (Input.GetButtonDown("ToggleRot")) {
 			ToggleRotDirection ();
 		}
+		else if (Input.GetButtonDown("Pause")) {
+			TogglePause ();
+		}
 	}
 
 	public void Restart ()
 	{
 		Debug.Log ("Restarted");
+		Time.timeScale = 1f;
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 	}
 
@@ -210,6 +222,24 @@ public class GameController : MonoBehaviour {
 		m_clockwise = !m_clockwise;
 		if (m_rotIconToggle) {
 			m_rotIconToggle.ToggleIcon (m_clockwise);
+		}
+	}
+
+	public void TogglePause ()
+	{
+		if (m_gameOver) { //если игра закончилась, то ничего не происходит
+			return;
+		}
+
+		m_isPaused = !m_isPaused; //при нажатии переключает триггер
+		if (m_pausePanel) {
+			m_pausePanel.SetActive (m_isPaused);//устанавливаем состояние в зависимости от триггера
+
+			if (m_soundManager) {
+				m_soundManager.m_musicSource.volume = (m_isPaused) ? m_soundManager.m_musicVolume * 0.25f : m_soundManager.m_musicVolume;
+			}//уменьшаем громкость, если включена пауза
+
+			Time.timeScale = (m_isPaused) ? 0 : 1;//если пауза, то все замирает
 		}
 	}
 
