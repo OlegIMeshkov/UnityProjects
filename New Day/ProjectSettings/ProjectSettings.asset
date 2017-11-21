@@ -10,7 +10,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: foks
+  companyName: FOKS Studio
   productName: "\u0421\u0435\u0433\u043E\u0434\u043D\u044F \u043B\u0443\u0447\u0448\u0435,
     \u0447\u0435\u043C \u0432\u0447\u0435\u0440\u0430!"
   defaultCursor: {fileID: 0}
@@ -38,7 +38,7 @@ PlayerSettings:
   allowedAutorotateToLandscapeRight: 0
   allowedAutorotateToLandscapeLeft: 0
   useOSAutorotation: 1
-  use32BitDisplayBuffer: 1
+  use32BitDisplayBuffer: 0
   disableDepthAndStencilBuffers: 0
   defaultIsFullScreen: 1
   defaultIsNativeResolution: 1
@@ -94,18 +94,18 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.foks.todayIsBetter
-  bundleVersion: 1.0
+  bundleIdentifier: com.foksstudio.todayIsBetter
+  bundleVersion: 1.8
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   xboxOneDisableKinectGpuReservation: 0
   singlePassStereoRendering: 0
   protectGraphicsMemory: 0
-  AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 9
+  AndroidBundleVersionCode: 8
+  AndroidMinSdkVersion: 10
   AndroidPreferredInstallLocation: 1
   aotOptions: 
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 1
   stripEngineCode: 1
   iPhoneStrippingLevel: 0
   iPhoneScriptCallOptimization: 0
@@ -114,7 +114,7 @@ PlayerSettings:
   ForceSDCardPermission: 0
   CreateWallpaper: 0
   APKExpansionFiles: 0
-  preloadShaders: 1
+  preloadShaders: 0
   StripUnusedMeshComponents: 0
   VertexChannelCompressionMask:
     serializedVersion: 2
@@ -165,28 +165,28 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
-  AndroidTVCompatibility: 1
-  AndroidIsGame: 1
-  androidEnableBanner: 1
+  AndroidKeystoreName: C:/Users/surf/Desktop/UnityProjects/New Day/todayIsBetter.keystore
+  AndroidKeyaliasName: todayisbetterkey
+  AndroidTVCompatibility: 0
+  AndroidIsGame: 0
+  androidEnableBanner: 0
   m_AndroidBanners:
   - width: 320
     height: 180
-    banner: {fileID: 2800000, guid: ce510946dc289834d91a19fb4e1524a4, type: 3}
+    banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: a08a060f94c8c614287d4eff93fa1713, type: 3}
+      m_Icon: {fileID: 2800000, guid: 163819c458ca6cb4ea8e5082b9dcf517, type: 3}
       m_Width: 128
       m_Height: 128
   - m_BuildTarget: Android
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: a08a060f94c8c614287d4eff93fa1713, type: 3}
+      m_Icon: {fileID: 2800000, guid: 163819c458ca6cb4ea8e5082b9dcf517, type: 3}
       m_Width: 192
       m_Height: 192
     - serializedVersion: 2
@@ -210,7 +210,10 @@ PlayerSettings:
       m_Width: 36
       m_Height: 36
   m_BuildTargetBatching: []
-  m_BuildTargetGraphicsAPIs: []
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 0b00000008000000
+    m_Automatic: 1
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   wiiUTitleID: 0005000011000000
@@ -368,7 +371,12 @@ PlayerSettings:
   psp2UseDebugIl2cppLibs: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: NATIVE_PLUGINS_LITE_VERSION;USES_ADDRESS_BOOK;USES_NETWORK_CONNECTIVITY;USES_SHARING
+    4: NATIVE_PLUGINS_LITE_VERSION;USES_ADDRESS_BOOK;USES_NETWORK_CONNECTIVITY;USES_SHARING
+    7: NATIVE_PLUGINS_LITE_VERSION;USES_ADDRESS_BOOK;USES_NETWORK_CONNECTIVITY;USES_SHARING
+    14: NATIVE_PLUGINS_LITE_VERSION;USES_ADDRESS_BOOK;USES_NETWORK_CONNECTIVITY;USES_SHARING
+    25: NATIVE_PLUGINS_LITE_VERSION;USES_ADDRESS_BOOK;USES_NETWORK_CONNECTIVITY;USES_SHARING
   metroPackageName: New Day
   metroPackageVersion: 
   metroCertificatePath: 

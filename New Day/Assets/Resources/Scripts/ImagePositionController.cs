@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using VoxelBusters.NativePlugins;
 
 public class ImagePositionController : MonoBehaviour {
-
-
+	
 	float sizing;
+
+
+
 
 	#region Image Control Variables
 
@@ -43,8 +46,10 @@ public class ImagePositionController : MonoBehaviour {
 	// Use this for initialization
 	void Awake () 
 	{
+
+
+
 		sizing = 540f / Screen.width;
-		Debug.Log (sizing.ToString ());
 		newDayF = System.DateTime.Now;
 		images = new Image[3] {leftImage, centralImage, rightImage};
 		previousDay = System.DateTime.Now.AddDays(-1);
@@ -81,33 +86,13 @@ public class ImagePositionController : MonoBehaviour {
 
 	void ImageStartPosition () 
 	{
-		/*
-		for (int i = 0; i < images.Length; i++) 
-		{
-			RectTransform currentImageRect = images [i].GetComponent<RectTransform> ();
-			currentImageRect.anchoredPosition = new Vector3 (Screen.width * (i - 1f), currentImageRect.anchoredPosition.y);
-			Debug.Log (currentImageRect.anchoredPosition.ToString());
-		}
-		*/
 
 			for (int i = 0; i < images.Length; i++) 
 			{
 				RectTransform currentImageRect = images [i].GetComponent<RectTransform> ();
 				currentImageRect.localPosition = new Vector3 (Screen.width * (i -1)* sizing, currentImageRect.localPosition.y, currentImageRect.localPosition.z);
-				Debug.Log (currentImageRect.localPosition.ToString());
 			}
-		}
-	/*else if (Screen.width < 1080) {
-			for (int i = 0; i < images.Length; i++) 
-			{
-				RectTransform currentImageRect = images [i].GetComponent<RectTransform> ();
-				currentImageRect.localPosition = new Vector3 (Screen.width * (i -1), currentImageRect.localPosition.y, currentImageRect.localPosition.z);
-				Debug.Log (currentImageRect.localPosition.ToString());
-			}
-		}*/
-
-
-
+	}
 
 	    			  // функция расстановки изображения при старте приложения
 
@@ -133,7 +118,6 @@ public class ImagePositionController : MonoBehaviour {
 			} 
 		}
 
-		Debug.Log ("Repositioned");
 
 	}    				 // функция перемещения изображения в случае его выхода за экран
 
@@ -339,4 +323,27 @@ public class ImagePositionController : MonoBehaviour {
 
 	#endregion
 
+
+	public void ShareImageAtPathUsingShareSheet ()
+	{
+		// Create share sheet
+		ShareSheet _shareSheet     = new ShareSheet();    
+
+
+
+
+		_shareSheet.AttachScreenShot ();
+
+		// Show composer
+		NPBinding.UI.SetPopoverPointAtLastTouchPosition();
+		NPBinding.Sharing.ShowView(_shareSheet, FinishedSharing);
+
+	}
+
+			void FinishedSharing (eShareResult _result)
+			{
+				Debug.Log("Finished sharing");
+
+				Debug.Log("Share Result = " + _result);
+			}
 }
