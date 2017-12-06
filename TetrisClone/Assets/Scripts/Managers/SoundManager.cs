@@ -26,6 +26,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip[] m_vocalClips;
 	public AudioClip m_gameOverVocalClip;
 
+	public AudioClip m_levelUpVocalClip;
+
 	public IconToggle m_musicIconToggle;
 	public IconToggle m_fxIconToggle;
 

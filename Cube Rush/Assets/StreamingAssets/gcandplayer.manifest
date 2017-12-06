@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 1669536996
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 79e5580c34105c3ada63f3fc07c224fe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 891341bba038869e74e55e0059fa2e12
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 92
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: bccfbe1114a6c3444834110d11272fcf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 96a92c19cea9a6f45ab20c1be2cbce94, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 124
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/GameController.prefab
+- Assets/Materials/PlayerMat.mat
+- Assets/Prefabs/Player.prefab
+Dependencies: []
