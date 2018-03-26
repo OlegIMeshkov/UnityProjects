@@ -1,0 +1,1654 @@
+fileFormatVersion: 2
+guid: d1b97e9815004c14daacaa575cd8b1c7
+timeCreated: 1520877021
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dota 2 Hero_Abaddon
+    21300002: Dota 2 Hero_Alchemist
+    21300004: Dota 2 Hero_Axe
+    21300006: Dota 2 Hero_Beastmaster
+    21300008: Dota 2 Hero_Brewmaster
+    21300010: Dota 2 Hero_Bristleback
+    21300012: Dota 2 Hero_Centaur Warrunner
+    21300014: Dota 2 Hero_Chaos Knight
+    21300016: Dota 2 Hero_Clockwerk
+    21300018: Dota 2 Hero_Doom
+    21300020: Dota 2 Hero_Dragon Knight
+    21300022: Dota 2 Hero_Earth Spirit
+    21300024: Dota 2 Hero_Earthshaker
+    21300026: Dota 2 Hero_Elder Titan
+    21300028: Dota 2 Hero_Huskar
+    21300030: Dota 2 Hero_Io
+    21300032: Dota 2 Hero_Kunkka
+    21300034: Dota 2 Hero_Legion Commander
+    21300036: Dota 2 Hero_Lifestealer
+    21300038: Dota 2 Hero_Lycan
+    21300040: Dota 2 Hero_Magnus
+    21300042: Dota 2 Hero_Night Stalker
+    21300044: Dota 2 Hero_Omniknight
+    21300046: Dota 2 Hero_Phoenix
+    21300048: Dota 2 Hero_Pudge
+    21300050: Dota 2 Hero_Sand King
+    21300052: Dota 2 Hero_Slardar
+    21300054: Dota 2 Hero_Spirit Breaker
+    21300056: Dota 2 Hero_Sven
+    21300058: Dota 2 Hero_Tidehunter
+    21300060: Dota 2 Hero_Timbersaw
+    21300062: Dota 2 Hero_Tiny
+    21300064: Dota 2 Hero_Treant Protector
+    21300066: Dota 2 Hero_Tusk
+    21300068: Dota 2 Hero_Underlord
+    21300070: Dota 2 Hero_Undying
+    21300072: Dota 2 Hero_Wraith King
+    21300074: Dota 2 Hero_Anti-mage
+    21300076: Dota 2 Hero_Ark Warden
+    21300078: Dota 2 Hero_Bloodseeker
+    21300080: Dota 2 Hero_Bounty Hunter
+    21300082: Dota 2 Hero_Broodmother
+    21300084: Dota 2 Hero_Clinkz
+    21300086: Dota 2 Hero_DrowRanger
+    21300088: Dota 2 Hero_Ember Spirit
+    21300090: Dota 2 Hero_Void
+    21300092: Dota 2 Hero_Gyrocopter
+    21300094: Dota 2 Hero_Juggernaut
+    21300096: Dota 2 Hero_Lone Druid
+    21300098: Dota 2 Hero_Luna
+    21300100: Dota 2 Hero_Medusa
+    21300102: Dota 2 Hero_Meepo
+    21300104: Dota 2 Hero_Mirana
+    21300106: Dota 2 Hero_Monkey King
+    21300108: Dota 2 Hero_Morphling
+    21300110: Dota 2 Hero_Naga Siren
+    21300112: Dota 2 Hero_Nyx Assasin
+    21300114: Dota 2 Hero_Pangolier
+    21300116: Dota 2 Hero_Phantom Assasin
+    21300118: Dota 2 Hero_Phantom Lancer
+    21300120: Dota 2 Hero_Razor
+    21300122: Dota 2 Hero_Riki
+    21300124: Dota 2 Hero_Shadow Fiend
+    21300126: Dota 2 Hero_Slark
+    21300128: Dota 2 Hero_Sniper
+    21300130: Dota 2 Hero_Spectre
+    21300132: Dota 2 Hero_Templar Assasin
+    21300134: Dota 2 Hero_Terrorblade
+    21300136: Dota 2 Hero_Troll Warlord
+    21300138: Dota 2 Hero_Ursa
+    21300140: Dota 2 Hero_Vengeful Spirit
+    21300142: Dota 2 Hero_Venomanser
+    21300144: Dota 2 Hero_Viper
+    21300146: Dota 2 Hero_Weaver
+    21300148: Dota 2 Hero_Ancient Apparition
+    21300150: Dota 2 Hero_Bane
+    21300152: Dota 2 Hero_Batrider
+    21300154: Dota 2 Hero_Chen
+    21300156: Dota 2 Hero_Crystal Maiden
+    21300158: Dota 2 Hero_Dark Seer
+    21300160: Dota 2 Hero_Dark Willow
+    21300162: Dota 2 Hero_Dazzle
+    21300164: Dota 2 Hero_Death Prophet
+    21300166: Dota 2 Hero_Disruptor
+    21300168: Dota 2 Hero_Enchantress
+    21300170: Dota 2 Hero_Enigma
+    21300172: Dota 2 Hero_Invoker
+    21300174: Dota 2 Hero_Jakiro
+    21300176: Dota 2 Hero_Keeper of the light
+    21300178: Dota 2 Hero_Leshrac
+    21300180: Dota 2 Hero_Lich
+    21300182: Dota 2 Hero_Lina
+    21300184: Dota 2 Hero_Lion
+    21300186: Dota 2 Hero_Nature's Prophet
+    21300188: Dota 2 Hero_Necrophos
+    21300190: Dota 2 Hero_Ogre Magi
+    21300192: Dota 2 Hero_Oracle
+    21300194: Dota 2 Hero_Outworld Dewourer
+    21300196: Dota 2 Hero_Puck
+    21300198: Dota 2 Hero_Pugna
+    21300200: Dota 2 Hero_Queen of pain
+    21300202: Dota 2 Hero_Rubick
+    21300204: Dota 2 Hero_Shadow Demon
+    21300206: Dota 2 Hero_Shadow Shaman
+    21300208: Dota 2 Hero_Silencer
+    21300210: Dota 2 Hero_Skywrath Mage
+    21300212: Dota 2 Hero_Storm Spirit
+    21300214: Dota 2 Hero_Techies
+    21300216: Dota 2 Hero_Tinker
+    21300218: Dota 2 Hero_Visage
+    21300220: Dota 2 Hero_Warlock
+    21300222: Dota 2 Hero_Windranger
+    21300224: Dota 2 Hero_Winter Wyvern
+    21300226: Dota 2 Hero_Witch Doctor
+    21300228: Dota 2 Hero_Zeus
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dota 2 Hero_Abaddon
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Alchemist
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Beastmaster
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Brewmaster
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Bristleback
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Centaur Warrunner
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Clockwerk
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Doom
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Dragon Knight
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Earth Spirit
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Earthshaker
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Elder Titan
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Io
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Kunkka
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Legion Commander
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Lycan
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Magnus
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Night Stalker
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 593
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Omniknight
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Pudge
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Sand King
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Slardar
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Spirit Breaker
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Sven
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Tidehunter
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Timbersaw
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Tiny
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Treant Protector
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Tusk
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Underlord
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Undying
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Wraith King
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 522
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Anti-mage
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Ark Warden
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Bloodseeker
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Bounty Hunter
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Broodmother
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Clinkz
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_DrowRanger
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Ember Spirit
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Void
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Juggernaut
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Lone Druid
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Medusa
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Meepo
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Mirana
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Monkey King
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Morphling
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Naga Siren
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Nyx Assasin
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Pangolier
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Phantom Assasin
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 427
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Razor
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Riki
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Shadow Fiend
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Slark
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Templar Assasin
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Terrorblade
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Troll Warlord
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Ursa
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Vengeful Spirit
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Viper
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Weaver
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 356
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Ancient Apparition
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Bane
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Batrider
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Chen
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Crystal Maiden
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Dark Seer
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Dark Willow
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Dazzle
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Death Prophet
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Disruptor
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Enchantress
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Enigma
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Invoker
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Jakiro
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Keeper of the light
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Leshrac
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Lich
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Lina
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Lion
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Nature's Prophet
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Necrophos
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Ogre Magi
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 261
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Oracle
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Outworld Dewourer
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Puck
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Pugna
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Queen of pain
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Rubick
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Shadow Demon
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Shadow Shaman
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Silencer
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Storm Spirit
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Techies
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Tinker
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Visage
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Warlock
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Windranger
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Winter Wyvern
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Witch Doctor
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dota 2 Hero_Zeus
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 190
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

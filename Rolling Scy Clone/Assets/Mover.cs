@@ -21,6 +21,12 @@ public class Mover : MonoBehaviour {
 	void Update () {
 		zPos += speed * Time.fixedDeltaTime;
 		xPos += Input.GetAxis ("Horizontal") * speed * Time.fixedDeltaTime;
+
+
+
+
+
+
 		if (jump) {
 			yPos = 0.36f + Mathf.Sin ((transform.position.z - startZPos) / 2f * Mathf.PI / 2f) * amplitude;
 
