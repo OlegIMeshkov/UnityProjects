@@ -8,9 +8,13 @@ public class Mover : MonoBehaviour {
 	float zPos;
 	float xPos;
 	float yPos;
+	//переменная для хранения позиции по оси Y
 	public float startZPos;
+	//переменная для хранения координаты по оси Z в момент, когда мы начали прыжок
 	public float amplitude;
+	//переменная для хранения высоты прыжка
 	public bool jump = false;
+	//переменная для хранения информации о том, прыгаем ли мы или нет
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +28,7 @@ public class Mover : MonoBehaviour {
 
 
 
+	
 
 
 
@@ -39,6 +44,7 @@ public class Mover : MonoBehaviour {
 
 	void OnCollisionEnter (Collision other)
 	{
+		
 		if (other.gameObject.CompareTag ("GrowingObstacle")) {
 			
 			Destroy (gameObject);
