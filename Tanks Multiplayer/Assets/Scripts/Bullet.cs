@@ -26,11 +26,13 @@ public class Bullet : NetworkBehaviour {
 	public int m_bounces = 2;
 	//количество ударов до смерти
 
-	public float m_damage = 1f;
+	public int m_damage = 1;
 	//урон, ноносимый при попадании пули
 
 	public List<string> m_collisionTags;
 	//список тэгов для объектов, в которые могут попадать пули
+
+	public PlayerController m_owner;
 
 	// Use this for initialization
 	void Start () {
@@ -101,7 +103,7 @@ public class Bullet : NetworkBehaviour {
 	{
 		CheckCollisions (collision);
 		//проверяем, столкнулись ли мы с объектом с тэгом из списка collisionTag
-		Debug.Log("dd");
+
 		if (m_bounceTags.Contains(collision.gameObject.tag))
 		//если тэг у объекта соударения совпадает хоть с одним из списка
 		{
@@ -119,17 +121,20 @@ public class Bullet : NetworkBehaviour {
 	void CheckCollisions (Collision collision)
 	//функция проверки, с кем пуля сталкивается и что при этом делать
 	{
+		
 		if (m_collisionTags.Contains(collision.collider.tag)) 
 			//если в списке тэгов объектов, разрешенных для столкновения, 
 			//есть тэг объекта, с которым мы сталкиваемся сейчас
+
 		{
 			Explode ();
 			//то взрываемся
-			PlayerHealth playerHealth = collision.gameObject.gameObject.GetComponentInChildren<PlayerHealth>();
+			PlayerHealth playerHealth = collision.gameObject.gameObject.GetComponentInParent<PlayerHealth>();
 			//запрашиваем у объекта, с которым сталкиваемся, компонент PlayerHealth
 			if (playerHealth != null) {
+				
 				//если этот компонент есть
-				playerHealth.Damage (m_damage);
+				playerHealth.Damage (m_damage, m_owner);
 				//то наносим объекту-игроку урон
 			}
 		}

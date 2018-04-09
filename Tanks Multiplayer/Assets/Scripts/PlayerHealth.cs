@@ -6,10 +6,12 @@ using UnityEngine.Networking;
 
 public class PlayerHealth : NetworkBehaviour {
 
+	[SyncVar(hook = "UpdateHealthBar")]
 	float m_currentHealth; 
 	//текущее количество жизней
 	public float m_maxHealth = 3f;
 	//максимальное количество жизней
+	[SyncVar]
 	public bool m_isDead = false;
 	//состояние объекта
 
@@ -19,9 +21,11 @@ public class PlayerHealth : NetworkBehaviour {
 	public RectTransform m_healthBar;
 	//переменная для RectTransform HealthBar'а
 
+	public PlayerController m_lastAttacker;
+
 	// Use this for initialization
 	void Start () {
-		m_currentHealth = m_maxHealth;
+		Reset ();
 		//устанавливаем текущее значение жизней равным максимальному
 		//StartCoroutine("CountDown");
 
@@ -56,25 +60,40 @@ public class PlayerHealth : NetworkBehaviour {
 		}
 	}
 
-	public void Damage (float damage)
+	public void Damage (float damage, PlayerController pc = null)
 	//функция нанесения ущерба
 	{
+		if (!isServer) {
+			return;
+		}
+
+		if (pc != null && pc!=this.GetComponent<PlayerController>()) {
+			m_lastAttacker = pc;
+		}
 		m_currentHealth -= damage;
 		//вычитаем из текущего здоровья урон
 
-		UpdateHealthBar (m_currentHealth);
-		//обновляем шкалу
+
 		if (m_currentHealth <= 0 && !m_isDead) {
+
+			if (m_lastAttacker != null) {
+				m_lastAttacker.m_score++;
+				m_lastAttacker = null;
+
+			}
 			//если текущее здоровье  становится меньше или равно нулю и мы пока живы,
 
+			GameManager.Instance.UpdateScoreboard ();
 			m_isDead = true;
 			//то переключаемся в состояние "мертвый"
-			Die ();
+			RpcDie ();
 			//вызываем функцию "смерти", пока еще мы ее не написали
 		}
 	}
 
-	void Die ()
+
+	[ClientRpc]
+	void RpcDie ()
 	//функция, вызываемая при уничтожении танка
 	{
 		if (m_deathPrefab) {
@@ -113,5 +132,16 @@ public class PlayerHealth : NetworkBehaviour {
 			c.enabled = state;
 		}
 		//переключаем все компоненты отображения в состояние state
+	}
+
+	public void Reset ()
+	//функция, сбрасывающая все настройки танка в начальное состояние
+	{
+		m_currentHealth = m_maxHealth;
+
+		SetActiveState (true);
+
+		m_isDead = false;
+
 	}
 }

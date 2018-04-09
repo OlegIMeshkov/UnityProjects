@@ -12,8 +12,18 @@ public class PlayerController : NetworkBehaviour {
 
 	PlayerHealth m_pHealth;
 	PlayerMotor m_pMotor;
-	PlayerSetup m_pSetup;
+	public PlayerSetup m_pSetup;
 	PlayerShoot m_pShoot;
+
+	Vector3 m_originalPosition;
+	//переменная для хранения начальной координаты спавна
+	NetworkStartPosition[] m_spawnPoints;
+	//массив с начальными координатами
+
+	public int m_score;
+
+
+	public GameObject m_spawnFx;
 
 	// Use this for initialization
 	void Start () 
@@ -23,6 +33,15 @@ public class PlayerController : NetworkBehaviour {
 		m_pSetup = GetComponent<PlayerSetup> ();
 		m_pShoot = GetComponent<PlayerShoot> ();
 	
+	}
+
+	public override void OnStartLocalPlayer()
+	//функция, запускающаяся при старте Локанльного игрока
+	{
+
+		m_spawnPoints = GameObject.FindObjectsOfType<NetworkStartPosition> ();
+		m_originalPosition = transform.position;
+		//запоминаем позицию, в которой игрок в первый раз респаунулся
 	}
 	
 
@@ -37,7 +56,7 @@ public class PlayerController : NetworkBehaviour {
 
 	void FixedUpdate ()
 	{
-		if (!isLocalPlayer) {
+		if (!isLocalPlayer || m_pHealth.m_isDead) {
 			return;
 		}
 		Vector3 inputDirection = GetInput ();
@@ -47,7 +66,7 @@ public class PlayerController : NetworkBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (!isLocalPlayer) {
+		if (!isLocalPlayer || m_pHealth.m_isDead) {
 			return;
 		}	
 
@@ -64,4 +83,34 @@ public class PlayerController : NetworkBehaviour {
 		m_pMotor.RotateTurret (turretDir);
 	}
 
+
+	void Disable ()
+	{
+		StartCoroutine ("RespawnRoutine");
+	}
+
+	IEnumerator RespawnRoutine ()
+	{
+		transform.position = GetRandomSpawnPosition();
+		m_pMotor.m_rigidBody.velocity = Vector3.zero;
+		yield return new WaitForSeconds (1f);
+		m_pHealth.Reset ();
+
+		if (m_spawnFx != null) {
+			GameObject spawnFx = Instantiate (m_spawnFx, transform.position + 0.5f * Vector3.up, Quaternion.identity) as GameObject;
+			Destroy (spawnFx, 3f);
+		}
+	}
+
+	Vector3 GetRandomSpawnPosition ()
+	//фукнция, выдающая случайную начальную точку спауна
+	{
+		if (m_spawnPoints != null) {
+			if (m_spawnPoints.Length > 0) {
+				NetworkStartPosition startPos = m_spawnPoints [Random.Range (0, m_spawnPoints.Length)];
+				return startPos.transform.position;
+			}
+		}
+		return Vector3.zero	;
+	}
 }

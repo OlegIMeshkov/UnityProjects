@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMotor : NetworkBehaviour {
 
-	Rigidbody m_rigidBody;
+	public Rigidbody m_rigidBody;
 
 	public Transform m_chassis;
 	public Transform m_turret;
