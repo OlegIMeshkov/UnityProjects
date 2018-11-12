@@ -32,7 +32,8 @@ public class XMLManager : MonoBehaviour {
 		public int timeEstimation;
 	}
 
-	public class ItemDatabase
+    [System.Serializable]
+    public class ItemDatabase
 	{
 		public List<ItemEntry> list = new List<ItemEntry>();
 

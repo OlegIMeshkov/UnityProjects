@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemDisplay : MonoBehaviour {
 
@@ -9,16 +10,24 @@ public class ItemDisplay : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-		for (int i = 0; i<20; i++) 
-		{
-		Display();
+        Display();
 	}
 	
-	}
+	
 	
 	public void Display ()
 	{
-		ItemBlock newBlock = Instantiate(blockPrefab) as ItemBlock;
-		newBlock.transform.SetParent(transform, false);
+        foreach (ItemEntry item in XMLManager.ins.itemDB.list)
+        {
+            ItemBlock newBlock = Instantiate(blockPrefab) as ItemBlock;
+            newBlock.transform.SetParent(GameManager.instance.tasksPanel.transform, false);
+            newBlock.Display(item);
+
+
+
+
+        
+            
+        }
 	}
 }
