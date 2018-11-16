@@ -115,6 +115,12 @@ public class GameManager : MonoBehaviour {
 
 	}
 
+    public void AddNewTask2()
+    {
+        XMLManager.ins.itemDB.list.Add(new ItemEntry() { itemDescription = m_title.text, itemPriority = System.Int32.Parse(m_priorityNumber.text), itemTimeEstimation = System.Int32.Parse(m_scheduledTimeNumber.text)  });
+
+    }
+
 	public void SaveTargetName ()
 	{
 		name = m_title.text;
@@ -127,8 +133,11 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-
-	public void OnButtonPress (bool state)
+    private void OnApplicationQuit()
+    {
+        XMLManager.ins.LoadItems();
+    }
+    public void OnButtonPress (bool state)
 	{
 		SaveTargetName ();
 		SetPanelActive (0);

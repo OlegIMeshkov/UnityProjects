@@ -10,8 +10,8 @@ public class ItemBlock : MonoBehaviour {
     public void Display(ItemEntry item)
     {
         taskDescription.text = item.itemDescription;
-        taskPriority.text = item.priority.ToString();
-        taskTimeEstimation.text = item.priority.ToString();
+        taskPriority.text = item.itemPriority.ToString();
+        taskTimeEstimation.text = item.itemTimeEstimation.ToString();
 
     }
 
