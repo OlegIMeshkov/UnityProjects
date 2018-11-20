@@ -10,6 +10,7 @@ public class XMLManager : MonoBehaviour {
 
 	public static XMLManager ins;
 	public ItemDatabase itemDB;
+    
        
 	// Use this for initialization
 	void Awake ()
@@ -27,12 +28,7 @@ public class XMLManager : MonoBehaviour {
         FileStream stream = new FileStream(Application.dataPath + "/StreamingAssets/XML/item_data.xml", FileMode.Create);
         serializer.Serialize(stream, itemDB);
         stream.Close();
-
-
-
-
     }
-
 
     public void LoadItems()
     {
@@ -46,21 +42,6 @@ public class XMLManager : MonoBehaviour {
 
 }
 
-	[System.Serializable]
-	public class ItemEntry
-	{
-		public string itemDescription;
-		public int itemPriority;
-		public int itemTimeEstimation;
-	}
 
-    [System.Serializable]
-    public class ItemDatabase
-	{
 
-        [XmlArray("TaskBox")]
-		public List<ItemEntry> list = new List<ItemEntry>();
-
-	}
-	
 
