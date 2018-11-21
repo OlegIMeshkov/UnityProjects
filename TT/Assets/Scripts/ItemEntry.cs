@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [System.Serializable]
 public class ItemEntry
 {
@@ -9,6 +10,7 @@ public class ItemEntry
     public int itemPriority;
     public int itemTimeEstimation;
     public int itemID;
+    public bool isActive = false;
 
 
 }

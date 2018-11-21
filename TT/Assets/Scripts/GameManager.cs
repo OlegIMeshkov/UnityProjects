@@ -26,7 +26,13 @@ public class GameManager : MonoBehaviour {
     public ItemEntry currentTask;
     protected static int globalItemID = 0;
 
+    public InputField taskInRuntimeDescrtiption;
+    public Text taskInRuntimePriority;
+    public Text taskInRuntimeScheduledTime_hours;
+    public Text taskInRuntimeScheduledTime_minutes;
+    public Text taskInRuntimeScheduledTime_seconds;
 
+    
 
 
     #region Unity standart methods

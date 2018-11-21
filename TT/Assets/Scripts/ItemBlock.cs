@@ -7,8 +7,8 @@ public class ItemBlock : MonoBehaviour {
 
     public Text taskDescription, taskPriority, taskTimeEstimation;
 
-    [SerializeField]
-    private int taskID;
+    
+    public int taskID;
 
     public void Display(ItemEntry item)
     {
