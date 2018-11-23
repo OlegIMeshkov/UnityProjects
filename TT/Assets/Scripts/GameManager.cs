@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System.Linq;
+
+
 
 public class GameManager : MonoBehaviour {
 
@@ -32,9 +35,34 @@ public class GameManager : MonoBehaviour {
     public Text taskInRuntimeScheduledTime_minutes;
     public Text taskInRuntimeScheduledTime_seconds;
 
-    
+    public bool taskIsActive = false;
+    public bool taskIsCompleted = false;
 
 
+    void Update()
+    {
+        if (taskIsActive)
+        {
+            GameManager.instance.currentTask.itemTimeEstimationInSeconds -= Time.deltaTime;
+            DisplayTimeTracking();
+        }
+
+    }
+
+
+    public void DisplayTimeTracking()
+    {
+        taskInRuntimeScheduledTime_hours.text = (Mathf.FloorToInt(currentTask.itemTimeEstimationInSeconds / 3600)).ToString();
+        taskInRuntimeScheduledTime_minutes.text = (Mathf.FloorToInt(currentTask.itemTimeEstimationInSeconds % 3600) / 60).ToString();
+        taskInRuntimeScheduledTime_seconds.text = (Mathf.FloorToInt(instance.currentTask.itemTimeEstimationInSeconds % 60)).ToString();
+    }
+
+    public void StartTimeTracking()
+    {
+        taskIsActive = !taskIsActive;
+
+
+    }
     #region Unity standart methods
 
     void Awake()
@@ -64,12 +92,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
 
     #endregion
 
@@ -143,7 +166,7 @@ public class GameManager : MonoBehaviour {
 
     public void AddNewTask2()
     {
-        ItemEntry newEntry = new ItemEntry() { itemID = globalItemID, itemDescription = m_title.text, itemPriority = System.Int32.Parse(m_priorityNumber.text), itemTimeEstimation = System.Int32.Parse(m_scheduledTimeNumber.text) };
+        ItemEntry newEntry = new ItemEntry() { itemID = globalItemID, itemDescription = m_title.text, itemPriority = System.Int32.Parse(m_priorityNumber.text), itemTimeEstimationInSeconds = System.Int32.Parse(m_scheduledTimeNumber.text)*60f };
         globalItemID++;
         Debug.Log("New task created with ID "  + newEntry.itemID);
         XMLManager.ins.itemDB.list.Add(newEntry);
@@ -151,15 +174,10 @@ public class GameManager : MonoBehaviour {
        
     }
 
-
-
-	public void ChangeTasksPostionAccordingToPriority ()
-	{
-		foreach (GameObject task in m_tasksList) {
-			
-		}
-	}
-
+    public void CompleteTask()
+    {
+        currentTask.isCompleted = true;
+    }
 
 
     private void OnApplicationQuit()

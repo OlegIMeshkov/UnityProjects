@@ -1,149 +1,21 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <TaskBox>
     <ItemEntry>
-      <itemDescription>nice one</itemDescription>
-      <itemPriority>7</itemPriority>
-      <itemTimeEstimation>38</itemTimeEstimation>
-      <itemID>1</itemID>
+      <itemDescription>Сбрить Володьке Усики</itemDescription>
+      <itemPriority>4</itemPriority>
+      <itemTimeEstimationInSeconds>840</itemTimeEstimationInSeconds>
+      <itemID>35</itemID>
+      <isActive>false</isActive>
+      <isCompleted>false</isCompleted>
     </ItemEntry>
     <ItemEntry>
-      <itemDescription>d</itemDescription>
-      <itemPriority>6</itemPriority>
-      <itemTimeEstimation>31</itemTimeEstimation>
-      <itemID>2</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>45</itemDescription>
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>4</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>75475</itemDescription>
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>5</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>75475</itemDescription>
-      <itemPriority>10</itemPriority>
-      <itemTimeEstimation>35</itemTimeEstimation>
-      <itemID>6</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>7</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>8</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>85</itemTimeEstimation>
-      <itemID>9</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>2</itemPriority>
-      <itemTimeEstimation>85</itemTimeEstimation>
-      <itemID>10</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>ddsfsf</itemDescription>
-      <itemPriority>2</itemPriority>
-      <itemTimeEstimation>85</itemTimeEstimation>
-      <itemID>11</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>asdfasdfasdf</itemDescription>
-      <itemPriority>2</itemPriority>
-      <itemTimeEstimation>44</itemTimeEstimation>
-      <itemID>12</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>asdfasdfads</itemDescription>
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>97</itemTimeEstimation>
-      <itemID>13</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>asdfasdfdas</itemDescription>
-      <itemPriority>6</itemPriority>
-      <itemTimeEstimation>16</itemTimeEstimation>
-      <itemID>14</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>333</itemDescription>
-      <itemPriority>6</itemPriority>
-      <itemTimeEstimation>16</itemTimeEstimation>
-      <itemID>15</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>16</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>top task</itemDescription>
-      <itemPriority>10</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>17</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>7</itemPriority>
-      <itemTimeEstimation>51</itemTimeEstimation>
-      <itemID>18</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>Buy a bulka</itemDescription>
-      <itemPriority>10</itemPriority>
-      <itemTimeEstimation>5</itemTimeEstimation>
-      <itemID>19</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>20</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>21</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>7</itemPriority>
-      <itemTimeEstimation>42</itemTimeEstimation>
-      <itemID>20</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>21</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription />
-      <itemPriority>5</itemPriority>
-      <itemTimeEstimation>30</itemTimeEstimation>
-      <itemID>0</itemID>
-    </ItemEntry>
-    <ItemEntry>
-      <itemDescription>76r76575t</itemDescription>
-      <itemPriority>10</itemPriority>
-      <itemTimeEstimation>59</itemTimeEstimation>
-      <itemID>1</itemID>
+      <itemDescription>Себе тоже сбрить усики</itemDescription>
+      <itemPriority>9</itemPriority>
+      <itemTimeEstimationInSeconds>536.7035</itemTimeEstimationInSeconds>
+      <itemID>36</itemID>
+      <isActive>false</isActive>
+      <isCompleted>false</isCompleted>
     </ItemEntry>
   </TaskBox>
 </ItemDatabase>

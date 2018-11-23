@@ -10,18 +10,34 @@ public class XMLManager : MonoBehaviour {
 
 	public static XMLManager ins;
 	public ItemDatabase itemDB;
-    
-       
-	// Use this for initialization
-	void Awake ()
+
+
+   
+
+
+// Use this for initialization
+void Awake ()
     {
 		if (ins == null) 
 		ins = this;
 		else if (ins != this) 
 		Destroy (gameObject);
-	}
+       
+    }
 
     public void SaveItems()
+    {
+        var serializer = new XmlSerializer(typeof(ItemDatabase));
+        string filename = Application.dataPath + "/StreamingAssets/XML/item_data.xml";
+        var encoding = System.Text.Encoding.GetEncoding("UTF-8");
+
+        using (StreamWriter stream = new StreamWriter(filename, false, encoding))
+        {
+            serializer.Serialize(stream, itemDB);
+        }
+    }
+
+    public void SaveItems2()
     {
         //open new XML file
         XmlSerializer serializer = new XmlSerializer(typeof(ItemDatabase));

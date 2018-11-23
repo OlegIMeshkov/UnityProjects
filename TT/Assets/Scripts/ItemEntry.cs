@@ -8,9 +8,10 @@ public class ItemEntry
 {
     public string itemDescription;
     public int itemPriority;
-    public int itemTimeEstimation;
+    public float itemTimeEstimationInSeconds;
     public int itemID;
     public bool isActive = false;
+    public bool isCompleted = false;
 
 
 }

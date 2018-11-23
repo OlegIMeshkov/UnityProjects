@@ -22,7 +22,7 @@ public class ItemDisplay : MonoBehaviour {
 	{
 
         XMLManager.ins.LoadItems();
-        Display();
+        DisplayFilteredByPriority();
         GameManager.instance.tasksPanel.GetComponent<RectTransform>().sizeDelta = new Vector2(GameManager.instance.tasksPanel.GetComponent<RectTransform>().sizeDelta.x, (GameManager.instance.tasksPanel.childCount) * 100 - Screen.height + GameManager.instance.newTaskButton.rect.height);
     }
 	
@@ -38,7 +38,7 @@ public class ItemDisplay : MonoBehaviour {
     {
         ClearTaskPanel();
        
-        List<ItemEntry> orderedList = XMLManager.ins.itemDB.list.OrderByDescending(t => t.itemPriority).ToList<ItemEntry>();
+        List<ItemEntry> orderedList = XMLManager.ins.itemDB.list.Where(t => t.isCompleted == false).OrderByDescending(t => t.itemPriority).ToList<ItemEntry>();
         FillTaskPanelWithList(orderedList);
     }
 
@@ -47,15 +47,17 @@ public class ItemDisplay : MonoBehaviour {
     {
         ClearTaskPanel();
 
-        List<ItemEntry> orderedList = XMLManager.ins.itemDB.list.OrderByDescending(t => t.itemTimeEstimation).ToList<ItemEntry>();
+        List<ItemEntry> orderedList = XMLManager.ins.itemDB.list.Where(t => t.isCompleted == false).OrderByDescending(t => t.itemTimeEstimationInSeconds).ToList<ItemEntry>();
+
         FillTaskPanelWithList(orderedList);
     }
+
 
     public void DisplayFilteredByID()
     {
         ClearTaskPanel();
 
-        List<ItemEntry> orderedList = XMLManager.ins.itemDB.list.OrderByDescending(t => t.itemID).ToList<ItemEntry>();
+        List<ItemEntry> orderedList = XMLManager.ins.itemDB.list.Where(t => t.isCompleted == false).OrderByDescending(t => t.itemID).ToList<ItemEntry>();
         FillTaskPanelWithList(orderedList);
     }
 

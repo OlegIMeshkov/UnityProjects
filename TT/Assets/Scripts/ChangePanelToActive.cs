@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ChangePanelToActive : MonoBehaviour
 {
+    ItemBlock ib;
+   
+  
+
 
     public void SetPanelActive(int panelIndex)
     {
@@ -19,12 +23,14 @@ public class ChangePanelToActive : MonoBehaviour
 
     public void TaskStart()
     {
-        ItemBlock ib = this.gameObject.GetComponent<ItemBlock>();
-        ItemEntry taskInRuntime = XMLManager.ins.itemDB.list.Find(t => t.itemID == ib.taskID);
-        GameManager.instance.taskInRuntimeDescrtiption.text = taskInRuntime.itemDescription;
-        GameManager.instance.taskInRuntimePriority.text = taskInRuntime.itemPriority.ToString();
-        Debug.Log(taskInRuntime.itemDescription);
-        GameManager.instance.taskInRuntimeScheduledTime_hours.text = ((int)(taskInRuntime.itemTimeEstimation / 60)).ToString();
-        GameManager.instance.taskInRuntimeScheduledTime_minutes.text = ((int)(taskInRuntime.itemTimeEstimation % 60)).ToString();
+        ib = this.gameObject.GetComponent<ItemBlock>();
+        GameManager.instance.currentTask = XMLManager.ins.itemDB.list.Find(t => t.itemID == ib.taskID);
+        GameManager.instance.taskInRuntimeDescrtiption.text = GameManager.instance.currentTask.itemDescription;
+        GameManager.instance.taskInRuntimePriority.text = GameManager.instance.currentTask.itemPriority.ToString();
+        Debug.Log(GameManager.instance.currentTask.itemDescription);
+        GameManager.instance.DisplayTimeTracking();
+        
     }
+
+
 }

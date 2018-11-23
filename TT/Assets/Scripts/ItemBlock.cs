@@ -15,7 +15,9 @@ public class ItemBlock : MonoBehaviour {
         taskID = item.itemID;
         taskDescription.text = item.itemDescription;
         taskPriority.text = item.itemPriority.ToString();
-        taskTimeEstimation.text = item.itemTimeEstimation.ToString();
+        taskTimeEstimation.text = (Mathf.FloorToInt(item.itemTimeEstimationInSeconds/3600)).ToString() + "h " 
+            + (Mathf.FloorToInt(item.itemTimeEstimationInSeconds % 3600)/60).ToString() + "m "
+            + (Mathf.FloorToInt(item.itemTimeEstimationInSeconds % 60)).ToString() + "s ";
 
     }
 
